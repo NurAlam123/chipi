@@ -1,0 +1,60 @@
+@import 'tailwindcss';
+@plugin '@tailwindcss/forms';
+@plugin '@tailwindcss/typography';
+
+body {
+	background: #18181b;
+	color: white;
+	height: 100svh;
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+}
+
+.no-scrollbar {
+	scrollbar-width: none;
+}
+
+::-webkit-scrollbar {
+	width: 0;
+}
+
+.sent::after {
+	width: 12px;
+	right: -12px;
+	border-bottom-left-radius: 10px;
+}
+
+.sent::before {
+	width: 20px;
+	right: -12px;
+	border-bottom-left-radius: 16px 14px;
+}
+
+.sent::after,
+.sent::before {
+	position: absolute;
+	bottom: 0;
+	height: 25px;
+	content: '';
+}
+
+.receive::after {
+	width: 12px;
+	left: -12px;
+	border-bottom-right-radius: 10px;
+}
+
+.receive::before {
+	width: 20px;
+	left: -12px;
+	border-bottom-right-radius: 16px 14px;
+}
+
+.receive::after,
+.receive::before {
+	position: absolute;
+	bottom: 0;
+	height: 25px;
+	content: '';
+}
