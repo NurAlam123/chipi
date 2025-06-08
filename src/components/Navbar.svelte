@@ -23,6 +23,7 @@
 		fetch('/api/ping')
 			.then((res) => {
 				if (!res.ok) isAlive.set(false);
+				else isAlive.set(true);
 				return;
 			})
 			.catch(() => isAlive.set(false));
