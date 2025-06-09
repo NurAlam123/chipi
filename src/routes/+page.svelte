@@ -31,7 +31,7 @@
 				<AddConversation />
 			</div>
 			{#if conversations.length > 0}
-				<ul>
+				<ul class="overflow-auto h-96">
 					{#each conversations as conversation (conversation.session_id)}
 						<li class="mb-2">
 							<a
