@@ -1,6 +1,6 @@
 # Chipi - Frontend
 
-Chipi is a lightweight, responsive and modern chatbot frontend built with **SvelteKit**. It communicates with the [Chipi - backend]() via API.
+Chipi is a lightweight, responsive and modern chatbot frontend built with **SvelteKit**. It communicates with the [Chipi - backend](https://github.com/nuralam123/chipi-backend.git) via API.
 
 ![Chipi](./static/chipi_showcase.gif)
 
